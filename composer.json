@@ -1,0 +1,31 @@
+{
+    "name": "weeek/weeek-client-php",
+    "description": "Weeek PHP Library",
+    "keywords": [
+        "weeek",
+        "api"
+    ],
+    "type": "library",
+    "homepage": "https://weeek.net",
+    "license": "MIT",
+    "require": {
+        "php": "^7.1 || ^8.0",
+        "ext-json": "*",
+        "php-http/discovery": "^1.7",
+        "php-http/httplug": "^2.1",
+        "php-http/client-common": "^2.0"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.1",
+        "http-interop/http-factory-guzzle": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Weeek\\": "src/"
+        }
+    },
+    "suggest": {
+        "guzzlehttp/guzzle": "Use Guzzle ^7 as HTTP client",
+        "http-interop/http-factory-guzzle": "Factory for guzzlehttp/guzzle"
+    }
+}
